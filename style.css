@@ -1,0 +1,162 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --bg: #121212;
+  --fg: #e0e0e0;
+  --accent: #bb86fc;
+  --header-height: 128px;     /* doubled */
+  --header-padding: 4rem;     /* doubled from 2rem */
+  --nav-gap: 4rem;            /* doubled from 2rem */
+  --slides-visible: 4;        /* fixed number of thumbnails shown */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font: 16px/1.5 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--header-height);
+  background: #1e1e1e;
+  padding: 0 var(--header-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgb(0 0 0 / .8);
+  z-index: 1000;
+}
+.logo img {
+  max-height: 80%;   /* scales with header height */
+  height: auto;
+  width: auto;
+}
+.main-nav a {
+  margin-left: var(--nav-gap);
+  text-decoration: none;
+  color: var(--fg);
+  position: relative;
+  font-weight: 500;
+}
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 2px;
+  background: var(--accent);
+  transition: width .3s;
+}
+.main-nav a:hover::after { width: 100%; }
+
+.header-spacer { height: var(--header-height); }
+
+/* push footer down */
+main { flex: 1; }
+
+/* ---------- Intro section ---------- */
+.intro {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  min-height: 60vh;
+}
+.intro-image,
+.intro-text {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.intro-image {
+  overflow: hidden;
+}
+.intro-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.intro-text {
+  padding: 4rem;
+}
+.intro-text h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--accent);
+}
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ---------- Carousel stripe ---------- */
+.carousel {
+  position: relative;
+  margin: 2rem 0;
+  overflow: hidden;
+  height: 33vh;
+}
+.track-wrapper {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.track {
+  display: flex;
+  transition: transform .5s ease-in-out;
+  will-change: transform;
+}
+.slide {
+  flex: 0 0 calc(100% / var(--slides-visible));
+  padding: 0 .5rem;
+  height: 100%;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgb(0 0 0 / .5);
+  transition: transform .4s;
+}
+.slide img:hover { transform: scale(1.05); }
+
+/* ---------- Controls ---------- */
+.ctrl {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1e1e1e;
+  border: none;
+  color: var(--fg);
+  font-size: 2rem;
+  padding: .25rem .6rem;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: .8;
+  transition: opacity .25s;
+}
+.ctrl:hover { opacity: 1; }
+.prev { left: 1rem; }
+.next { right: 1rem; }
+
+/* ---------- Footer ---------- */
+footer {
+  background: #1e1e1e;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: .9rem;
+  color: var(--fg);
+}
