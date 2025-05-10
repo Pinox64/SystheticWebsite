@@ -1,0 +1,15 @@
+[
+    {
+      "id": "project1",
+      "title": "Sleek Gadget",
+      "description": "A sleek gadget that enhances your workflow.",
+      "folder": "assets/images/projects/project1"
+    },
+    {
+      "id": "project2",
+      "title": "Power Tool",
+      "description": "A powerful tool for everyday tasks.",
+      "folder": "assets/images/projects/project2"
+    }
+  ]
+  
