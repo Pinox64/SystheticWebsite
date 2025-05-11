@@ -2,7 +2,7 @@
 layout: default
 header: portfolio
 title: Portfolio
-permalink: /RenaudGagnon/
+permalink: /RenaudGagnon/portfolio/
 ---
 
 <section class="skills">

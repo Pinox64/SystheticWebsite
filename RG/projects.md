@@ -1,7 +1,8 @@
 ---
 layout: default
+header: portfolio
 title: Projects
-permalink: /projects/
+permalink: /RenaudGagnon/projects/
 ---
 
 <section class="projects-list">

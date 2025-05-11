@@ -1,7 +1,8 @@
 ---
 layout: default
+header: portfolio
 title: Internships
-permalink: /internships/
+permalink: /RenaudGagnon/internships/
 ---
 
 <section class="internships">

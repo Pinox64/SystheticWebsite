@@ -13,11 +13,17 @@
       <img src="{{ '/assets/images/Systhetic_black_transparent.png' | relative_url }}" alt="Logo">
       </a>
     </div>
+    {% if page.header == "portfolio" %}
+    <div class="header-text">
+      <h1>Renaud Gagnon - {{ page.title }}</h1>    
+    </div>
+    {% endif %}
     <nav class="main-nav">
       {% if page.header == "portfolio" %}
-        <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
-        <a href="{{ '/internships/' | relative_url }}">Internships</a>
-        <a href="{{ '/projects/' | relative_url }}">Projects</a>
+        <a href="{{ '/RenaudGagnon/' | relative_url }}">Accueil</a>
+        <a href="{{ '/RenaudGagnon/portfolio/' | relative_url }}">Portfolio</a>
+        <a href="{{ '/RenaudGagnon/internships/' | relative_url }}">Stages</a>
+        <a href="{{ '/RenaudGagnon/projects/' | relative_url }}">Projets</a>
       {% else %}
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
@@ -33,7 +39,7 @@
   </main>
 
   <footer>
-    <p>© 2025 Your-Business-Name | 123 Mockingbird Ln, Sherbrooke QC | (555) 123-4567 | info@example.com</p>
+    <p>© 2025 Systhetic | info@systhetic.com</p>
   </footer>
 
   <script src="{{ '/assets/js/project-carousel.js' | relative_url }}"></script>

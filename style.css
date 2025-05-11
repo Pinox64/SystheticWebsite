@@ -71,17 +71,19 @@ main { flex: 1; }
   height: 60vh;
   padding: 2%;
 }
+.intro.rgHome {
+  height: 80vh;
+}
 .intro-image {
-  flex: 0 0 60%;
   height: 100%;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 .intro-image img {
-  width: 100%; height: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .intro-text {
-  flex: 0 0 30%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,10 +180,12 @@ footer {
     position: relative;
     overflow: hidden;
     height: 300px; /* or any fixed height */
+    padding: 2%;
   }
   .project-carousel img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    padding: 2%;
   }
