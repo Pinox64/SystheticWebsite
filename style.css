@@ -4,7 +4,7 @@
 :root {
   --bg: #121212;
   --fg: #e0e0e0;
-  --accent: #bb86fc;
+  --accent: #004bc8;
   --header-height: 128px;
   --header-padding: 4rem;
   --nav-gap: 4rem;
@@ -74,20 +74,32 @@ main { flex: 1; }
 .intro.rgHome {
   height: 80vh;
 }
+
 .intro-image {
-  height: 100%;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
+
+
 .intro-image img {
-  height: 100%;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 15px;
 }
+
 .intro-text {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 4rem;
+  min-width: 60%;
+
 }
 .intro-text h1 {
   font-size: 2.5rem;

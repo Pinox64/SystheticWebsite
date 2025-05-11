@@ -40,6 +40,10 @@
 
   <footer>
     <p>© 2025 Systhetic | info@systhetic.com</p>
+    <link
+  rel="stylesheet"
+  href="{{ 'style.css' | relative_url }}?v={{ site.time | date: '%s' }}"
+>
   </footer>
 
   <script src="{{ '/assets/js/project-carousel.js' | relative_url }}"></script>
