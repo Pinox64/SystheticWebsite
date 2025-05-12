@@ -20,6 +20,7 @@ permalink: /RenaudGagnon/projects/
           {% endif %}
         {% endfor %}
       </div>
+      
     </section>
   {% endfor %}
 </section>
