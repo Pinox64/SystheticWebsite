@@ -231,3 +231,5 @@ footer {
 .lb-next  { right: 2rem; top: 50%; transform:translateY(-50%); }
 .lb-close { top: 1rem;   right: 1.3rem; font-size: 4rem; }
 .lb-prev:hover, .lb-next:hover, .lb-close:hover { color: var(--accent, #4d9aff); }
+.slide { padding: 0 .25rem; box-sizing: border-box; }
+
