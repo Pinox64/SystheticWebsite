@@ -1,8 +1,8 @@
 [
     {
       "id": "project1",
-      "title": "Sleek Gadget",
-      "description": "A sleek gadget that enhances your workflow.",
+      "title": "Sherpent",
+      "description": "Un serpent robot completemtnt customisé qui a été réalisé dans le cadre du projet de session 4 en génie robotique. J'ai surtout été impliqué dans la partie électronique du projet (design, fabrication et intégration du PCB).",
       "folder": "assets/images/projects/project1"
     },
     {

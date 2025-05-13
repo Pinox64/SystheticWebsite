@@ -123,22 +123,32 @@ main { flex: 1; }
   height: 100%;
   width: 100%;
 }
+/* 1) centre verticalement les slides */
 .track {
-  display: flex;
-  transition: transform .5s ease-in-out;
-  will-change: transform;
-}
-.slide {
-  flex: 0 0 calc(100% / var(--slides-visible));
-  padding: 0 .5rem;
+  display: flex;       /* au cas où */
+  align-items: center;
   height: 100%;
 }
+
+/* 2) chaque slide s’ajuste à l’image */
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: max-content;
+  min-width: 0;           /* <— crucial : autorise le rétrécissement     */
+  flex: 0 0 auto;       /* largeur auto selon le contenu (l’image) */
+  box-sizing: border-box;
+}
+
+/* 3) l’image remplit la hauteur et garde ratio */
 .slide img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 18px rgb(0 0 0 / .5);
-  transition: transform .4s;
+  display: block;
+  height: 100%;
+  width:  auto;
+  object-fit: contain;
+  object-position: center center;
 }
 .slide img:hover { transform: scale(1.05); }
 
@@ -231,5 +241,6 @@ footer {
 .lb-next  { right: 2rem; top: 50%; transform:translateY(-50%); }
 .lb-close { top: 1rem;   right: 1.3rem; font-size: 4rem; }
 .lb-prev:hover, .lb-next:hover, .lb-close:hover { color: var(--accent, #4d9aff); }
-.slide { padding: 0 .25rem; box-sizing: border-box; }
+
+
 
