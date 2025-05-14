@@ -31,7 +31,6 @@ function initCarousel(box) {
     wrap.appendChild(track);
   }
   wrap.style.overflow = 'hidden';
-  track.style.display = 'flex';
   track.style.transition = 'transform .45s ease';
 
   /* boutons ------------------------------------------------------- */
@@ -49,8 +48,6 @@ function initCarousel(box) {
   const refresh = () => {
     const w = wrap.clientWidth;
     visible = w >= 1280 ? 4 : w >= 960 ? 3 : w >= 600 ? 2 : 1;
-    const basis = 100 / visible;
-    slides.forEach(s => { s.style.flex = `0 0 ${basis}%`; });
     max = Math.max(0, slides.length - visible +1);
     idx = Math.min(idx, max);
     update();

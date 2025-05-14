@@ -114,9 +114,8 @@ main { flex: 1; }
 /* Carousel */
 .carousel {
   position: relative;
-  margin: 2rem 0;
   overflow: hidden;
-  height: 33vh;
+  flex: 1;
 }
 .track-wrapper {
   overflow: hidden;
@@ -128,28 +127,29 @@ main { flex: 1; }
   display: flex;       /* au cas où */
   align-items: center;
   height: 100%;
-}
-
-/* 2) chaque slide s’ajuste à l’image */
-.slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: max-content;
-  min-width: 0;           /* <— crucial : autorise le rétrécissement     */
-  flex: 0 0 auto;       /* largeur auto selon le contenu (l’image) */
-  box-sizing: border-box;
+  list-style: none;    /* remove the default dots */
 }
 
 /* 3) l’image remplit la hauteur et garde ratio */
 .slide img {
-  display: block;
   height: 100%;
-  width:  auto;
-  object-fit: contain;
+  width: auto;
+  object-fit: cover;
   object-position: center center;
+  align-items: center;
+  border-radius: 10px;
 }
+
+/* 2) chaque slide s’ajuste à l’image */
+.slide {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  padding: 10px;
+}
+
+
 .slide img:hover { transform: scale(1.05); }
 
 /* Controls */
@@ -191,7 +191,10 @@ footer {
   }
   .project-row {
     display: flex;
+    align-items: stretch;   /* ← ensure children stretch to the same height */
     margin-bottom: 3rem;
+    height: auto;
+    height: 33vh;
   }
   .project-text {
     flex: 0 0 30%;
