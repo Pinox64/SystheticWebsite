@@ -7,9 +7,15 @@
     },
     {
       "id": "project2",
-      "title": "Power Tool",
-      "description": "A powerful tool for everyday tasks.",
+      "title": "Rénovation de remorque",
+      "description": "Rénovation d'une remorque de 4x8 pieds pour le transport de matériaux de construction et de véhicules récréatif. Ce projet, m'a permis d'apprendre la soudure au mig, le sandblast et la peinture. Une grande partie du travail a été fait par moi-même et une partie du travail sur la structure métallique a été réalisé par un ami.",
       "folder": "assets/images/projects/project2"
+    },
+    {
+      "id": "project3",
+      "title": "Maquette de LU uno",
+      "description": "Le LU uno est le produit phare de l'entreprise LU-Aire de jeu interactive. Ce produit est une installation qui crée un écran de projection interactif pour les enfants. J'ai mené un projet de maquette 1:8 de ce produit afin de pouvoir le présenter dans des trade shows. J'ai réalisé l'entièreté de la conception de la maquette, le design et l'impression 3D des pièces, ainsi que l'intégration de l'électronique. Ce projet a été mon premier contact avec les PCB flexibles et la conception de circuits fonctionnant sur batterie.",
+      "folder": "assets/images/projects/MiniLu"
     }
   ]
   

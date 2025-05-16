@@ -12,12 +12,13 @@ permalink: /RenaudGagnon/
   
   <h1>Bonjour, je suis Renaud Gagnon</h1>
   <p>
-    Étudiant en génie passionné par les systèmes embarqués, la robotique et l’électronique de puissance.
+    Étudiant en génie Robotique a l'université de Sherbrooke. Je suis passionné par les systèmes embarqués, la robotique et la mécanique.
     Je conçois des solutions concrètes — du contrôle moteur temps réel jusqu’aux systèmes de gestion de batterie.
+    Mes expériences tant nombreuses que diverses ont fait de moi quelqu'un de polyvalent et débrouillard.
   </p>
   <p>
     Parcours mon portfolio pour découvrir mes projets, mes compétences et mes expériences.
   </p>
-  <a href="/RenaudGagnon/portfolio/" class="btn">Voir mon travail</a>
+  <a href="/RenaudGagnon/projects/" class="btn">Voir mes projets</a>
 </div>
 </section>

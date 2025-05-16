@@ -187,7 +187,8 @@ footer {
   }
   
   .projects-list {
-    padding: 2rem;
+    padding: 3em 4%;
+
   }
   .project-row {
     display: flex;
@@ -246,4 +247,23 @@ footer {
 .lb-prev:hover, .lb-next:hover, .lb-close:hover { color: var(--accent, #4d9aff); }
 
 
+.btn{
+  display: block;
+  background-color: #007BFF;     /* Bright blue background */
+  color: white;                  /* White text */
+  padding: 0.75em 1.5em;         /* More space inside */
+  margin-top: 2em;
+  font-size: 1.1em;              /* Bigger text */
+  font-weight: bold;            /* Make text stand out */
+  border: none;
+  border-radius: 8px;            /* Rounded corners */
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s, background-color 0.3s;
+  width: fit-content;
+}
 
+.btn:hover {
+  background-color: #0056b3;     /* Darker on hover */
+  transform: scale(1.05);        /* Slight zoom */
+}
