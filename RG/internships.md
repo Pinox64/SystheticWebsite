@@ -8,7 +8,8 @@ permalink: /RenaudGagnon/internships/
 <section class="internships">
   <h1>Internships</h1>
   <ul>
-    <li><strong>Robot9, Longueuil</strong> – Summer 2025 Robotics Intern</li>
-    <!-- add more as needed -->
+  {% for internship in site.data.internships %}
+    <li><strong> <a href="{{internship.link}}"><img src='assets/images/RG/'+ {{internship.businessID}}></a>, {{internship.business}} {{internsip.location}} </strong> – {{internship.time}} – {{internship.jobtitle}} – {{internship.role}} </li>
+  {%endfor%}
   </ul>
 </section>

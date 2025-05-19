@@ -1,0 +1,36 @@
+[
+    {
+      "logoID": "BRP",
+      "business": "BRP",
+      "time": "Été 2023",
+      "location": "Valcourt, QC",
+      "jobtitle":"Stagiaire en Mécattronique",
+      "link": "https://www.brp.com/fr-ca.html",
+      "role": ["1","2"]
+    },
+    {
+      "logoID": "RDDC",
+      "business": "RDDC",
+      "time": "Hiver 2023",
+      "location": "Valcartier, QC",
+      "jobtitle":"Stagiaire en Électronique",
+      "link": "https://www.rddc-rdrdc.com/"
+    },
+    {
+      "logoID": "BRP",
+      "business": "BRP",
+      "time": "Automnne 2024",
+      "location": "Valcourt, QC",
+      "jobtitle":"Stagiaire en Mécattronique",
+      "link": "https://www.brp.com/fr/.html"
+    },
+    {
+      "logoID": "Rbot9",
+      "business": "Rbot9",
+      "time": "Été 2025",
+      "location": "longueil, QC",
+      "jobtitle":"Stagiaire en Robotique",
+      "link": "https://www.rbot9.com/"
+    }
+  ]
+  
