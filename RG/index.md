@@ -20,5 +20,6 @@ permalink: /RenaudGagnon/
     Parcours mon portfolio pour découvrir mes projets, mes compétences et mes expériences.
   </p>
   <a href="/RenaudGagnon/projects/" class="btn">Voir mes projets</a>
+  <a href="/RenaudGagnon/internships/" class="btn">Voir mes expériences de travail</a>
 </div>
 </section>
