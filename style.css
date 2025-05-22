@@ -267,3 +267,71 @@ footer {
   background-color: #0056b3;     /* Darker on hover */
   transform: scale(1.05);        /* Slight zoom */
 }
+
+/* ————————————————————————————————————————— Internships Page ————————————————————————————————————————— */
+
+.internships {
+  padding: 4rem 2%;
+}
+.internships h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.internship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.internship-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  transition: transform .3s, box-shadow .3s;
+}
+.internship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+.internship-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  background: var(--bg);
+}
+
+.internship-details {
+  padding: 1rem;
+  flex: 1;
+  color: var(--fg);
+}
+.internship-details h2 {
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+}
+.internship-details h2 a {
+  color: var(--fg);
+  text-decoration: none;
+}
+.internship-details h2 a:hover {
+  color: var(--accent);
+}
+
+.internship-details p {
+  margin: .3rem 0;
+  font-size: .9rem;
+}
+.internship-details .location {
+  font-style: italic;
+  color: #bbb;
+}
+.internship-details .time {
+  font-weight: 600;
+}
