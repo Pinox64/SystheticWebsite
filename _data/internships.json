@@ -6,7 +6,9 @@
       "location": "Valcourt, QC",
       "jobtitle":"Stagiaire en Mécattronique",
       "link": "https://www.brp.com/fr-ca.html",
-      "role": ["1","2"]
+      "role": ["1","2"],
+      "description": "Dans ce premier stage de niveau collégial en Mécattronique chez BRP, j'a eu l'occasion d'en apprendre plus sur l'orginasation du travail et la communocation en grande entreprise. J'ai aussi eu l'occasion de travailler sur un projet de développement de banc de test électrique automatisé pour réaliser certains tests pour les écrans des véhicules.",
+      "duration": "15 semaines"
     },
     {
       "logoID": "RDDC",
@@ -14,7 +16,9 @@
       "time": "Hiver 2023",
       "location": "Valcartier, QC",
       "jobtitle":"Stagiaire en Électronique",
-      "link": "https://www.rddc-rdrdc.com/"
+      "link": "https://www.rddc-rdrdc.com/",
+      "role": "",
+      "duration": "15 semaines"
     },
     {
       "logoID": "BRP",
@@ -22,7 +26,9 @@
       "time": "Automnne 2024",
       "location": "Valcourt, QC",
       "jobtitle":"Stagiaire en Mécattronique",
-      "link": "https://www.brp.com/fr/.html"
+      "link": "https://www.brp.com/fr/.html",
+      "role": "",
+      "duration": "15 semaines"
     },
     {
       "logoID": "Rbot9",
@@ -30,7 +36,9 @@
       "time": "Été 2025",
       "location": "longueil, QC",
       "jobtitle":"Stagiaire en Robotique",
-      "link": "https://www.rbot9.com/"
+      "link": "https://www.rbot9.com/",
+      "role": "",
+      "duration": "15 semaines"
     }
   ]
   

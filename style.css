@@ -269,6 +269,8 @@ footer {
 }
 
 /* ————————————————————————————————————————— Internships Page ————————————————————————————————————————— */
+/* ——— Internship Modal Styles ——— */
+/* ————————————————————————————————————————— Internships Page ————————————————————————————————————————— */
 
 .internships {
   padding: 4rem 2%;
@@ -334,4 +336,70 @@ footer {
 }
 .internship-details .time {
   font-weight: 600;
+}
+
+.internship-card {
+  cursor: pointer;
+}
+
+/* Overlay */
+.internship-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;            /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+.internship-modal.open {
+  display: flex;
+}
+
+/* Modal box */
+.internship-modal-content {
+  background: #2a2a2a;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  color: var(--fg);
+}
+
+/* Close button */
+.internship-modal-close {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--fg);
+  cursor: pointer;
+}
+
+/* Modal content */
+.internship-modal-content h2 {
+  margin-top: 0;
+}
+.internship-modal-content .description {
+  margin: 1rem 0;
+  line-height: 1.4;
+}
+.internship-modal-content .apply-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: .5rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.internship-modal-content .apply-link:hover {
+  opacity: 0.9;
 }
