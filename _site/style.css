@@ -1,5 +1,5 @@
-/* ========================================================================== 
-   Renaud Gagnon — Site Styles (mobile-first, drop-in)
+/* ==========================================================================
+   Renaud Gagnon — Site Styles (mobile-first + touch detection)
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
@@ -136,7 +136,8 @@ footer{
   *{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
 }
 
-@media (max-width:899px){
+/* === Touch-device styles (instead of max-width) === */
+@media (hover: none) and (pointer: coarse) {
   .main-nav{
     position:absolute; right:1rem; top:calc(var(--header-h) - 8px);
     display:none; flex-direction:column; gap:.25rem; background:var(--panel); border:1px solid #24242a; border-radius:12px;
@@ -145,8 +146,26 @@ footer{
   .main-nav a{ padding:.6rem .75rem; border-radius:10px; }
   .main-nav.open{ display:flex; }
   body.nav-open{ overflow:hidden; }
+
+  /* Mobile swipe/scroll carousels */
+  .carousel .track-wrapper{
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: .5rem;
+  }
+  .carousel .track{
+    flex-wrap: nowrap;
+    gap: .75rem;
+  }
+  .carousel .slide{
+    flex: 0 0 85%;
+    scroll-snap-align: start;
+  }
 }
 
+/* Desktop / larger device refinements */
 @media (min-width:600px){
   :root{ --header-h:104px }
   .intro{ grid-template-columns: 1.1fr .9fr; }
@@ -169,27 +188,4 @@ footer{
   .intro{ grid-template-columns: 0.75fr 1.25fr; padding:2rem 0 3rem; }
   .intro-text h1{ font-size:3rem }
   .carousel{ --h: 60vh }
-}
-
-/* Mobile swipe/scroll for carousels */
-@media (max-width: 899px) {
-  .carousel .track-wrapper{
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;     /* smooth iOS */
-    scroll-snap-type: x mandatory;         /* snap to slides */
-    scroll-padding-left: .5rem;
-  }
-  .carousel .track{
-    flex-wrap: nowrap;
-    gap: .75rem;
-  }
-  .carousel .slide{
-    flex: 0 0 85%;                          /* slide width on phones */
-    scroll-snap-align: start;
-  }
-  /* optional: hide arrows on phones; remove if you want them visible */
-  /* .carousel .ctrl{ display:none; } */
-  /* keep z-index so arrows sit over images if shown */
-  .carousel .ctrl{ z-index: 10; }
 }
