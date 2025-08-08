@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ 'style.css' | relative_url }}">
 </head>
+
 <body>
   <header class="site-header">
-    <div class="logo">
-      <a href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/images/Systhetic_black_transparent.png' | relative_url }}" alt="Logo">
-      </a>
-    </div>
-    {% if page.header == "portfolio" %}
-    <div class="header-text">
-      <h1>Renaud Gagnon - {{ page.title }}</h1>    
-    </div>
-    {% endif %}
-    <nav class="main-nav">
+    <div class="container">
+      <div class="logo">
+        <a href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/images/Systhetic_black_transparent.png' | relative_url }}" alt="Logo">
+        </a>
+      </div>
+
       {% if page.header == "portfolio" %}
+      <div class="header-text">
+        <h1>Renaud Gagnon - {{ page.title }}</h1>
+      </div>
+      {% endif %}
+
+      <button class="hamburger" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="main-nav">
+        {% if page.header == "portfolio" %}
         <a href="{{ '/RenaudGagnon/' | relative_url }}">Accueil</a>
         <a href="{{ '/RenaudGagnon/portfolio/' | relative_url }}">Portfolio</a>
         <a href="{{ '/RenaudGagnon/internships/' | relative_url }}">Stages</a>
         <a href="{{ '/RenaudGagnon/projects/' | relative_url }}">Projets</a>
-      {% else %}
+        {% else %}
         <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/downloads/' | relative_url }}">Downloads</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
         <a href="{{ '/contact/' | relative_url }}">Contact</a>
-      {% endif %}
-    </nav>
-  
+        {% endif %}
+      </nav>
+    </div>
   </header>
   <div class="header-spacer"></div>
 
@@ -40,12 +50,10 @@
 
   <footer>
     <p>© 2025 Systhetic | info@systhetic.com</p>
-    <link
-  rel="stylesheet"
-  href="{{ 'style.css' | relative_url }}?v={{ site.time | date: '%s' }}"
->
+    <link rel="stylesheet" href="{{ 'style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </footer>
 
   <script src="{{ 'script.js' | relative_url }}"></script>
 </body>
+
 </html>

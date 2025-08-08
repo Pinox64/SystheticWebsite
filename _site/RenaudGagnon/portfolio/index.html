@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Portfolio | </title>
   <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
   <header class="site-header">
-    <div class="logo">
-      <a href="/">
-      <img src="/assets/images/Systhetic_black_transparent.png" alt="Logo">
-      </a>
-    </div>
-    
-    <div class="header-text">
-      <h1>Renaud Gagnon - Portfolio</h1>    
-    </div>
-    
-    <nav class="main-nav">
+    <div class="container">
+      <div class="logo">
+        <a href="/">
+          <img src="/assets/images/Systhetic_black_transparent.png" alt="Logo">
+        </a>
+      </div>
+
       
+      <div class="header-text">
+        <h1>Renaud Gagnon - Portfolio</h1>
+      </div>
+      
+
+      <button class="hamburger" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="main-nav">
+        
         <a href="/RenaudGagnon/">Accueil</a>
         <a href="/RenaudGagnon/portfolio/">Portfolio</a>
         <a href="/RenaudGagnon/internships/">Stages</a>
         <a href="/RenaudGagnon/projects/">Projets</a>
-      
-    </nav>
-  
+        
+      </nav>
+    </div>
   </header>
   <div class="header-spacer"></div>
 
@@ -45,12 +54,10 @@
 
   <footer>
     <p>© 2025 Systhetic | info@systhetic.com</p>
-    <link
-  rel="stylesheet"
-  href="/style.css?v=1747968979"
->
+    <link rel="stylesheet" href="/style.css?v=1754625885">
   </footer>
 
   <script src="/script.js"></script>
 </body>
+
 </html>
