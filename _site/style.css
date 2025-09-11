@@ -96,13 +96,13 @@ button{ font:inherit; background:none; border:0; color:inherit; }
 .btn:active{ transform:translateY(0) scale(.98); }
 
 .carousel{
-  --h: 40vh;
+  --h: 30vh;
   position:relative; overflow:hidden; border-radius:var(--radius);
   margin:1.25rem 0 2rem; background:var(--panel);
 }
 .carousel .track-wrapper{ height:var(--h) }
 .track{ display:flex; align-items:center; height:100%; list-style:none; gap:.5rem; padding:.5rem; margin:0 }
-.slide{ height:100%; display:flex; align-items:center; justify-content:center; }
+.slide{ height:var(--h); display:flex; align-items:center; justify-content:center; }
 .slide img{ height:100%; width:auto; object-fit:contain; border-radius:10px; transition:transform .2s ease; }
 .slide img:hover{ transform:scale(1.02); }
 .ctrl{ position:absolute; top:50%; transform:translateY(-50%); background:#111a; color:#fff; font-size:1.6rem; padding:.3rem .55rem; border-radius:999px; cursor:pointer; z-index:10; }
@@ -112,10 +112,21 @@ footer{
   margin-top:2rem; background:#141416; border-top:1px solid #222; text-align:center; padding:1.25rem; color:var(--muted);
 }
 
-.projects-list{ padding:2rem 0; display:flex; flex-direction:column; gap:2rem; }
-.project-row{ display:flex; gap:1rem; align-items:stretch; height:auto; }
-.project-text{ flex:0 0 300px; max-width:300px; }
-.project-image{ flex:1; }
+/* Projects stacked layout */
+.project-row{
+  display:flex;
+  flex-direction:column; /* stack text then carousel */
+  gap:1rem;
+}
+
+.project-text{
+  flex:initial;
+  max-width:none;        /* let text span full width */
+}
+
+.project-image{
+  flex:initial;
+}
 
 .internships{ padding:2rem 0 }
 .internships h1{ font-size:var(--fs-800); color:var(--accent); text-align:center; margin-bottom:1rem; }
@@ -181,7 +192,6 @@ footer{
   .intro{ grid-template-columns: 1.1fr .9fr; }
   .intro .intro-image{ order:1 }
   .intro .intro-text{ order:2; padding-left:1rem; }
-  .carousel{ --h: 48vh }
 }
 
 @media (min-width:900px){
@@ -189,14 +199,12 @@ footer{
   .main-nav{ display:flex; gap:1.25rem; position:static; padding:0; border:0; box-shadow:none; background:transparent; }
   .intro{ grid-template-columns: 0.8fr 1.2fr; align-items:center; }
   .intro-text h1{ font-size:2.6rem }
-  .carousel{ --h: 55vh }
 }
 
 @media (min-width:1200px){
   :root{ --header-h:124px }
   .intro{ grid-template-columns: 0.75fr 1.25fr; padding:2rem 0 3rem; }
   .intro-text h1{ font-size:3rem }
-  .carousel{ --h: 60vh }
 }
 
 /* --- Lightbox overlay --- */
