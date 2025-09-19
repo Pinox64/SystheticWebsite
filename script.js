@@ -3,9 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.carousel, .project-carousel').forEach(initCarousel);
   buildLightbox();
   initHamburger();
+  loadProjectImages(); // Load project images
 });
 
-/* ----------  CAROUSEL  ---------- */
+/* ----------  CAROUSEE ---------- */
 function initCarousel(box) {
   /* track + slides ------------------------------------------------ */
   let track = box.querySelector('.track, .pc-track');
@@ -234,6 +235,39 @@ function initHamburger() {
       nav.classList.remove('open');
       btn.setAttribute('aria-expanded', 'false');
       document.body.classList.remove('nav-open');
+    }
+  });
+}
+
+/* ----------- Projects ------------- */
+async function loadProjectImages() {
+  const projectCarousels = document.querySelectorAll('.project-carousel');
+  if (projectCarousels.length === 0) return;
+
+  // Create a map of project IDs to their image files
+  const projectImageData = {
+    project1: ["assets/images/projects/project1/1.webp","assets/images/projects/project1/20250219_144539.webp","assets/images/projects/project1/20250225_161010.webp","assets/images/projects/project1/20250328_175127.webp","assets/images/projects/project1/20250402_105535.webp","assets/images/projects/project1/20250402_114535.webp","assets/images/projects/project1/20250407_134350.webp","assets/images/projects/project1/20250407_135756.webp","assets/images/projects/project1/20250411_011843.webp","assets/images/projects/project1/20250411_013235.webp"],
+    project2: ["assets/images/projects/project2/20240303_182413.webp","assets/images/projects/project2/20240303_190107.webp","assets/images/projects/project2/20240303_192521.webp","assets/images/projects/project2/20240303_192609.webp","assets/images/projects/project2/20240303_192613.webp","assets/images/projects/project2/20240303_192632.webp","assets/images/projects/project2/20240304_125227.webp","assets/images/projects/project2/20240304_135718.webp","assets/images/projects/project2/20240304_181255.webp","assets/images/projects/project2/20240305_193524.webp","assets/images/projects/project2/20240305_215303.webp","assets/images/projects/project2/20240305_231024.webp","assets/images/projects/project2/20240305_231034.webp","assets/images/projects/project2/20240306_224552.webp","assets/images/projects/project2/20240306_225355.webp","assets/images/projects/project2/20240316_122229.webp","assets/images/projects/project2/20240316_122232.webp","assets/images/projects/project2/20240316_162105.webp","assets/images/projects/project2/20240316_185531.webp","assets/images/projects/project2/20240316_214213.webp","assets/images/projects/project2/20240330_131001.webp","assets/images/projects/project2/20240330_134703.webp","assets/images/projects/project2/20240330_134708.webp","assets/images/projects/project2/20240330_211420.webp","assets/images/projects/project2/20240330_223709.webp","assets/images/projects/project2/20240330_223720.webp","assets/images/projects/project2/20240420_153319.webp","assets/images/projects/project2/20240601_182643.webp","assets/images/projects/project2/20240602_155243.webp","assets/images/projects/project2/20240602_202539.webp","assets/images/projects/project2/20240602_202546.webp"],
+    MiniLu: ["assets/images/projects/MiniLu/20230601_145725.webp","assets/images/projects/MiniLu/20230612_170113.webp","assets/images/projects/MiniLu/20230614_111945.webp","assets/images/projects/MiniLu/20230809_191627.webp","assets/images/projects/MiniLu/20230809_191630.webp","assets/images/projects/MiniLu/20231023_142457.webp","assets/images/projects/MiniLu/20231024_095214.webp","assets/images/projects/MiniLu/20231024_150644.webp","assets/images/projects/MiniLu/20231024_155901.webp","assets/images/projects/MiniLu/20231024_155911.webp","assets/images/projects/MiniLu/20231024_155919.webp","assets/images/projects/MiniLu/20231024_182900.webp"]
+  };
+
+  projectCarousels.forEach(carousel => {
+    const projectId = carousel.dataset.id;
+    const images = projectImageData[projectId];
+
+    if (images) {
+      const track = document.createElement('div');
+      track.className = 'pc-track';
+
+      images.forEach(src => {
+        const slide = document.createElement('img');
+        slide.src = src;
+        slide.className = 'slide';
+        track.appendChild(slide);
+      });
+
+      carousel.appendChild(track);
+      initCarousel(carousel);
     }
   });
 }

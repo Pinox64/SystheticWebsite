@@ -1,34 +1,21 @@
 ---
 layout: default
-header: portfolio
-title: Projects
-permalink: /RenaudGagnon/projects/
+header: rg
+permalink: /projects
 ---
 
-<section class="projects-list">
-  {% for proj in site.data.projects %}
-    <section class="project-row" id="{{ proj.id }}">
+<div class="container">
+  <h1 class="page-title">My Projects</h1>
+
+  {% for project in site.data.projects %}
+    <div class="project-row">
       <div class="project-text">
-        <h2>{{ proj.title }}</h2>
-        <p>{{ proj.description }}</p>
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
       </div>
-      <section class="carousel" data-folder="{{ proj.folder }}">
-      <button class="ctrl prev" aria-label="Previous slide">&#10094;</button>
-      <div class="track-wrapper">
-        <ul class="track">
-        {% for file in site.static_files %}
-          {% if file.path contains proj.folder %}
-          <li class="slide">
-            <img src="{{ file.path | relative_url }}"
-                 alt="{{ proj.title }} image {{ forloop.index }}">
-          </li>
-          {% endif %}
-        {% endfor %}
-        </ul>
+      <div class="project-carousel" data-folder="{{ project.folder }}" data-id="{{ project.id }}">
+        <!-- Carousel will be loaded here by script.js -->
       </div>
-      <button class="ctrl next" aria-label="Next slide">&#10095;</button>
-      </section>
-      
-    </section>
+    </div>
   {% endfor %}
-</section>
+</div>
