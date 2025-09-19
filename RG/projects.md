@@ -1,7 +1,7 @@
 ---
 layout: default
 header: rg
-permalink: /projects
+permalink: /RenaudGagnon/projects
 ---
 
 <div class="container">
