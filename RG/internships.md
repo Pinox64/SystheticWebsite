@@ -1,11 +1,11 @@
 ---
 layout: default
 header: portfolio
-title: Internships
+title: Stages
 permalink: /RenaudGagnon/internships/
 ---
 <section class="internships">
-  <h1>Internships</h1>
+  <h1>Mes expériences de stage</h1>
   <div class="internship-grid">
   {% for internship in site.data.internships %}
     <article class="internship-card" data-modal-id="modal-{{ forloop.index }}">

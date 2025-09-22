@@ -1,27 +1,39 @@
 [
     {
       "id": "EMUS_BMS",
+      "year": "2025",
       "title": "BMS a balancemnet actif pour batteries Li-Ion de moto électrique",
-      "description": "Un système de gestion de batterie (BMS) pour optimiser les performances des batteries Li-Ion utilisées dans une moto électrique.",
+      "description": "Un système de gestion de batterie (BMS) pour optimiser les performances des batteries Li-Ion utilisées dans une moto électrique. Ce projet a été réalisé dans le cadre du groupe étudiant EMUS qui partiscipe à la compétition MotoStudent; une compétition internationale de moto électrique pour étudiants qui a lieu en espagne. J'ai été responsable de la conception et de l'assemblagedu PCB.",
       "folder": "assets/images/projects/EMUS_BMS"
     },
     {
       "id": "project1",
       "title": "Sherpent",
+      "year": "2025",
       "description": "Un serpent robot completemtnt customisé qui a été réalisé dans le cadre du projet de session 4 en génie robotique. J'ai surtout été impliqué dans la partie électronique du projet (design, fabrication et intégration du PCB).",
       "folder": "assets/images/projects/project1"
     },
     {
+      "id": "project2",
+      "title": "Rénovation de remorque",
+      "year": "2024",
+      "description": "Rénovation d'une remorque de 4x8 pieds pour le transport de matériaux de construction et de véhicules récréatif. Ce projet, m'a permis d'apprendre la soudure au mig, le sandblast et la peinture. Une grande partie du travail a été fait par moi-même et une partie du travail sur la structure métallique a été réalisé par un ami.",
+      "folder": "assets/images/projects/project2"
+    },
+    {
       "id": "project3",
       "title": "Maquette de LU uno",
+      "year": "2023",
       "description": "Le LU uno est le produit phare de l'entreprise LU-Aire de jeu interactive. Ce produit est une installation qui crée un écran de projection interactif pour les enfants. J'ai mené un projet de maquette 1:8 de ce produit afin de pouvoir le présenter dans des trade shows. J'ai réalisé l'entièreté de la conception de la maquette, le design et l'impression 3D des pièces, ainsi que l'intégration de l'électronique. Ce projet a été mon premier contact avec les PCB flexibles et la conception de circuits fonctionnant sur batterie.",
       "folder": "assets/images/projects/MiniLu"
     },
     {
-      "id": "project2",
-      "title": "Rénovation de remorque",
-      "description": "Rénovation d'une remorque de 4x8 pieds pour le transport de matériaux de construction et de véhicules récréatif. Ce projet, m'a permis d'apprendre la soudure au mig, le sandblast et la peinture. Une grande partie du travail a été fait par moi-même et une partie du travail sur la structure métallique a été réalisé par un ami.",
-      "folder": "assets/images/projects/project2"
+      "id": "Arcade_Machine",
+      "title": "Borne d'arcade",
+      "year": "2018-2023",
+      "description": "Une borne d'arcade personnalisée avec des jeux rétro. Au fil des années, elle est passée d'un simple boîtier en bois avec un Raspberry Pi à une borne d'arcade entièrement customisée, intégrant des pièces d'ordinateurs portables recyclés, une finition de peinture professionnelle et des t-moldings (bandes de protection en plastique insérées sur les arêtes pour une meilleure esthétique et durabilité).",
+      "folder": "assets/images/projects/arcade_machine"
     }
+    
   ]
   
