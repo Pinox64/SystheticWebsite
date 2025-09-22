@@ -6,12 +6,12 @@
 
 :root{
   --bg:#0f0f10;
-  --panel:#1b1b1d;
+  --panel:#212124;
   --fg:#e8e8ea;
   --muted:#b9b9c0;
   --accent:#4d8dff;
   --danger:#ff5d5d;
-  --radius:14px;
+  --radius:20px;
   --shadow:0 6px 16px rgba(0,0,0,.35);
   --fs-300:.875rem;
   --fs-400:1rem;
@@ -19,7 +19,7 @@
   --fs-600:1.375rem;
   --fs-700:1.75rem;
   --fs-800:2.25rem;
-  --header-h:96px;
+  --header-h:20px;
   --container:1100px;
   --gap:1rem;
 }
@@ -49,7 +49,7 @@ button{ font:inherit; background:none; border:0; color:inherit; }
   position:sticky; top:0; z-index:1000;
   height:var(--header-h);
   width:100%;
-  background:linear-gradient(180deg, #171717, #141414);
+  background: linear-gradient(180deg, #171717, #141414);
   border-bottom:1px solid #222;
   display:flex; align-items:center;
 }
@@ -117,6 +117,10 @@ footer{
   display:flex;
   flex-direction:column; /* stack text then carousel */
   gap:1rem;
+  Margin: 20px;
+  padding:0 1rem;
+  background-color: var(--panel);
+  border-radius: var(--radius);
 }
 
 .project-text{
@@ -146,6 +150,8 @@ footer{
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
 }
+
+.intro .intro.rgHome{ height: calc(100vh - var(--header-h)) !important;}
 
 /* === Touch-device styles (instead of max-width) === */
 @media (hover: none) and (pointer: coarse) {
@@ -190,8 +196,9 @@ footer{
 @media (min-width:600px){
   :root{ --header-h:104px }
   .intro{ grid-template-columns: 1.1fr .9fr; }
-  .intro .intro-image{ order:1 }
+  .intro .intro-image{ order:1 ; position:relative; }
   .intro .intro-text{ order:2; padding-left:1rem; }
+  .intro .intro-image img{ height: calc(100vh - var(--header-h) - 20px); object-fit:cover; }
 }
 
 @media (min-width:900px){
