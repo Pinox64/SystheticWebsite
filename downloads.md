@@ -15,7 +15,7 @@ permalink: /downloads/
     </div>
 
     <div style="text-align:center; padding: 20px;">
-      <a href="https://github.com/Pinox64/Systhetic-releases" target="_blank" rel="noopener noreferrer" style="display:inline-block; background:#24292e; color:#fff; padding:12px 20px; border-radius:6px; text-decoration:none; font-weight:600;">
+      <a href="https://github.com/Pinox64/PCluster_Software" target="_blank" rel="noopener noreferrer" style="display:inline-block; background:#24292e; color:#fff; padding:12px 20px; border-radius:6px; text-decoration:none; font-weight:600;">
         See download links
       </a>
     </div>

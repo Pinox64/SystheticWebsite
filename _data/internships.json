@@ -6,7 +6,7 @@
       "location": "Valcourt, QC",
       "jobtitle":"Stagiaire en Mécattronique",
       "link": "https://www.brp.com/fr-ca.html",
-      "role": ["1","2"],
+      "role": "",
       "description": "Dans ce premier stage de niveau collégial en Mécattronique chez BRP, j'a eu l'occasion d'en apprendre plus sur l'orginasation du travail et la communocation en grande entreprise. J'ai aussi eu l'occasion de travailler sur un projet de développement de banc de test électrique automatisé pour réaliser certains tests pour les écrans des véhicules.",
       "duration": "15 semaines"
     },
@@ -18,7 +18,7 @@
       "jobtitle":"Stagiaire en Électronique",
       "link": "https://www.rddc-rdrdc.com/",
       "role": "",
-      "description": "Dans ce second stage chez BRP, mais cette fois au niveau universitaire, j'ai eu l'occasion de travailler sur l'intégration  de nouveaux capteurs sur les véhicules et de mettre en place des outils logiciels permettant la validation de ces capteurs.",
+      "description": "Lors de ce stage en Électronique chez RDDC, j'ai eu l'occasion de travailler sur la conception de circuits imprimés pour des systèmes de lasers pulsés utilisés dans des applications militaires. J'ai aussi participé à la programmation de microcontrôleurs pour le contrôle de ces systèmes.",
       "duration": "15 semaines"
     },
     {
@@ -29,6 +29,7 @@
       "jobtitle":"Stagiaire en Mécattronique",
       "link": "https://www.brp.com/fr/.html",
       "role": "",
+      "description": "Dans ce second stage chez BRP, mais cette fois au niveau universitaire, j'ai eu l'occasion de travailler sur l'intégration  de nouveaux capteurs sur les véhicules et de mettre en place des outils logiciels permettant la validation de ces capteurs.",
       "duration": "15 semaines"
     },
     {
@@ -39,6 +40,7 @@
       "jobtitle":"Stagiaire en Robotique",
       "link": "https://www.rbot9.com/",
       "role": "",
+      "description": "Lors de ce stage en Robotique chez Rbot9, j'ai eu l'occasion de travailler sur le développement de systèmes robotiques à câbles pour des applications industrielles. J'ai grandement participé à la conception mécanique et j'ai été au sein du processus de choix des composants et d'itération des prototypes. Lors de ce stage j'ai aussi pu participer au développement d'un banc d'essai pour les câbles utilisés dans les systèmes robotiques.",
       "duration": "15 semaines"
     }
   ]

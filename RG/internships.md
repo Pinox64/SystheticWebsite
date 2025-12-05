@@ -33,7 +33,6 @@ permalink: /RenaudGagnon/internships/
         <p><strong>Location:</strong> {{ internship.location }}</p>
         <p><strong>Time:</strong> {{ internship.time }}</p>
         <p><strong>Job:</strong> {{ internship.jobtitle }}</p>
-        <p><strong>Role:</strong> {{ internship.role }}</p>
         <p class="description">
           {% if internship.description %}
             {{ internship.description}}

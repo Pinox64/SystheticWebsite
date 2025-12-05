@@ -187,16 +187,14 @@ button {
   order:2;
   position: relative;
   /*height:calc(80vh - var(--header-h)) !important;*/
+  height: auto;
+  max-height: 80vh;
 }
 
-.intro .intro-image {
-  order:1;
-  height: auto;
-}
 .intro .intro-image img {
-  width: 100%;
+  position: relative;
+  object-fit: contain;  /* keeps aspect ratio, fills area */
   height: 100%;
-  object-fit: cover;  /* keeps aspect ratio, fills area */
   border-radius: var(--radius);
 }
 
@@ -368,8 +366,10 @@ footer {
 
 .internship-grid {
   display:grid;
+  justify-items: center;
   gap:1rem;
   grid-template-columns:repeat(auto-fill, minmax(240px, 1fr));
+
 }
 
 .internship-card {
@@ -531,11 +531,6 @@ footer {
   .intro .intro-text {
     order:2;
     padding-left:1rem;
-  }
-
-  .intro .intro-image img {
-    
-    object-fit:cover;
   }
 }
 
