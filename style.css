@@ -118,6 +118,7 @@ button {
   justify-content:space-between;
   gap:1rem;
   position:relative;
+  height:100%;
 }
 
 .logo {
@@ -457,9 +458,9 @@ footer {
   }
 }
 
-/* Touch-device styles (instead of max-width) ------------------------------ */
+/* Mobile / small screens -------------------------------------------------- */
 
-@media (hover: none) and (pointer: coarse) {
+@media (max-width: 899px) {
   .main-nav {
     position:absolute;
     right:1rem;
@@ -484,6 +485,10 @@ footer {
     display:flex;
   }
 
+  .hamburger {
+    display:inline-flex !important;
+  }
+
   body.nav-open {
     overflow:hidden;
   }
@@ -505,10 +510,6 @@ footer {
   .carousel .slide {
     flex:0 0 85%;
     scroll-snap-align:start;
-  }
-
-  .hamburger {
-    display:inline-flex !important;
   }
 }
 
